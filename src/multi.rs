@@ -5,6 +5,7 @@ use std::io::{Stdout, Result, Write};
 use std::sync::mpsc;
 use std::sync::mpsc::{Sender, Receiver};
 
+#[derive(Clone)]
 pub struct MultiBar<T: Write> {
     nlines: usize,
 
